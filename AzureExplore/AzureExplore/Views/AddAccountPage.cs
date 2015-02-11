@@ -15,15 +15,15 @@ namespace AzureExplore.Views
 
         public AddAccountPage()
         {
-            BackgroundColor = Color.White;
+            BackgroundColor = Color.FromHex("#1a1a1a");
 
             var layout = new StackLayout();
             layout.Padding = 20;
 
-            Label accountLabel = new Label { Text = "Account Name", Font = Font.SystemFontOfSize(NamedSize.Medium), TextColor = Color.Black };
+            Label accountLabel = new Label { Text = "Account Name", FontSize = 21, TextColor = Color.White };
             //accountLabel.TextColor = Font.SystemFontOfSize(14, FontAttributes.Bold);
             accountInput = new Entry { Placeholder = "Account", TextColor = Color.Black, Text="jimmygarrido" };
-            Label keyLabel = new Label { Text = "Account Key", Font = Font.SystemFontOfSize(NamedSize.Medium), TextColor = Color.Black };
+            Label keyLabel = new Label { Text = "Account Key", FontSize = 21, TextColor = Color.White };
             keyInput = new Entry { Placeholder = "Key", TextColor = Color.Black, Text = "tPdoyMB5YopNibic+IxnzzzkYZlIhAa3ojS1gCFY/SRuq4NYcGFN6oypH5SjvPdtgUrICA4tFsMF9w9pSRjBJQ==" };
             Button addBtn = new Button { Text = "Add Account" };
             addBtn.Clicked += AddBtnClicked;

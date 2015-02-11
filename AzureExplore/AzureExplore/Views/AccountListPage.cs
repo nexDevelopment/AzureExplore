@@ -14,7 +14,7 @@ namespace AzureExplore.Views
         public AccountListPage()
         {
             listView = new ListView();
-            BackgroundColor = Color.White;
+            BackgroundColor = Color.FromHex("#1a1a1a");
             
             //Create layout and add listview
             var layout = new StackLayout();

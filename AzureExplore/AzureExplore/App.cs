@@ -13,9 +13,7 @@ namespace AzureExplore
 
         public App ()
         {
-            var homePage = new NavigationPage(new AccountListPage());
-            MainPage = homePage;
-            //MainPage
+            MainPage = new NavigationPage(new AccountListPage());
         }
     }
 }

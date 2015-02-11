@@ -41,8 +41,8 @@ namespace AzureExplore.Models
                                         + "\n" // if none match
                                         + "\n" // if unmodified since
                                         + "\n" // range
-                                        + "x-ms-date:" + DateTime.UtcNow.ToString("R") + "\nx-ms-version:2012-02-12\n" // headers
-                                        + "/{0}\ncomp:list", account);
+                                        + "x-ms-date:" + DateTime.UtcNow.ToString("R") + "\nx-ms-version:2014-02-14\n" // headers
+                                        + "/{0}\ncomp:list\nrestype:container", account);
 
             string authSignature = Auth.SignAuth(stringToSign, account, key);
 
@@ -56,7 +56,7 @@ namespace AzureExplore.Models
 
             try
             {
-                response = await client.GetAsync(new Uri("https://jimmygarrido.blob.core.windows.net/?comp=list"));
+                response = await client.GetAsync(new Uri(" "));
                 response.EnsureSuccessStatusCode();
                 reader = await response.Content.ReadAsStringAsync();
                 xml = XDocument.Parse(reader);
