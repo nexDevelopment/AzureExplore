@@ -10,7 +10,7 @@ namespace AzureExplore.Models
 {
     class StorageAccounts
     {
-        //static string _account;
+        //static string _account;  
         //static string _key;
         //static string stringToSign;
         //static string authSignature;
